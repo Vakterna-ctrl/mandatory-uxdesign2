@@ -1,0 +1,50 @@
+.RadioButtonItem {
+  cursor: pointer;
+}
+
+.RadioButtonItem > [type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.RadioButtonItem > .fake {
+  border: 2px solid purple;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+.RadioButtonItem > [type="radio"]:hover + .fake{
+  background-color: rgba(112,111,112,0.8);
+  -webkit-box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+  -moz-box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+   box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+
+}
+.RadioButtonItem > [type="radio"]:focus + .fake{
+  background-color: rgba(112,111,112,0.8);
+  -webkit-box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+  -moz-box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+   box-shadow: 0px 0px 9px 5px rgba(112,111,112,0.8);
+}
+
+.RadioButtonItem > [type="radio"]:checked + .fake::after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: purple;
+}

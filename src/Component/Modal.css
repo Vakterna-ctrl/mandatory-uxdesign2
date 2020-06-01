@@ -1,0 +1,66 @@
+.modalWindow{
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.buttons{
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#RestartButton{
+  min-width: 64px;
+  height: 36px;
+  color:white;
+  background-color: purple;
+  font-size: 15px;
+  border-width: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+  -moz-box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+   box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+   cursor: pointer;
+   font-weight: bold;
+}
+.Close{
+  min-width: 64px;
+  height: 36px;
+  color:purple;
+  background-color: white;
+  font-size: 15px;
+  border-width: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit{
+  min-width: 64px;
+  height: 36px;
+  color:white;
+  background-color: purple;
+  font-size: 15px;
+  border-width: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+  -moz-box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+   box-shadow: -3px 7px 4px -5px rgba(145,140,145,1);
+   cursor: pointer;
+   font-weight: bold;
+}
+#RestartButton:focus{
+  opacity: 60%;
+}
+.submit:focus{
+  opacity: 60%;
+}
+.Close:focus{
+  opacity: 60%;
+}
